@@ -1,16 +1,10 @@
-'use client';
 
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
 export default function Home() {
   const [mode, setMode] = useState('register');
-  const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setMessage('');
+  const [mess
     setLoading(true);
 
     const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
